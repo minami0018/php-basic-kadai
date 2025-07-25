@@ -10,7 +10,9 @@
     <?php
     $item = ['name'=> 'onion', 'price'=> 200,'origin'=> '北海道'];
     // 連想配列の値を出力する
-    echo "$item.<br>";
+    foreach ($item as $key => $value) {
+      echo "{$key} : {$value}<br>"; 
+    }
     ?>
   </p>
   </body>
